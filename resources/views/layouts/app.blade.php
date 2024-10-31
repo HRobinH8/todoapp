@@ -9,17 +9,17 @@
     <title>To-Do Lijst</title>
     <style>
         body {
-            position: relative; /* Zorgt ervoor dat de footer relatief aan de body wordt gepositioneerd */
-            min-height: 100vh; /* Zorg ervoor dat de body minimaal de hoogte van het venster heeft */
-            margin: 0; /* Verwijder standaard marges */
-            padding-bottom: 100px; /* Geef ruimte voor de footer */
+            position: relative; 
+            min-height: 100vh; 
+            margin: 0; 
+            padding-bottom: 100px; 
         }
 
         footer {
-            position: absolute; /* Maak de footer absoluut gepositioneerd */
-            bottom: 0; /* Plaats de footer onderaan de body */
-            left: 0; /* Zorg ervoor dat de footer de volledige breedte van de body gebruikt */
-            right: 0; /* Zorg ervoor dat de footer de volledige breedte van de body gebruikt */
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
         }
     </style>
 </head>
