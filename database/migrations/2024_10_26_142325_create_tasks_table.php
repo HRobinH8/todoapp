@@ -9,18 +9,20 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
-    {
-        Schema::create('tasks', function (Blueprint $table) {
-            $table->id();
-            $table->string('taak');
-            $table->string('status');
-            $table->date('deadline');
-            $table->text('omschrijving');
-            $table->decimal('budget', 8, 2);
-            $table->timestamps();
-        });
-    }
+    public function up()
+{
+    Schema::create('tasks', function (Blueprint $table) {
+        $table->id();
+        $table->string('taak');
+        $table->string('status');
+        $table->date('deadline');
+        $table->text('omschrijving'); // Dit moet null kunnen zijn
+        $table->decimal('budget', 8, 2)->nullable(); // Dit moet ook null kunnen zijn
+        $table->timestamps();
+        
+    });
+}
+
 
     /**
      * Reverse the migrations.

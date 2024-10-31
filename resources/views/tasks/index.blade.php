@@ -22,7 +22,7 @@
                     </tr>
                 </thead>
                 <tbody> 
-                    @foreach ($tasks as $task) {{-- begint een lus die elke taak in de $tasks-collectie doorloopt --}}
+                    @foreach ($tasks as $task) {{-- begint een loop die elke taak in de $tasks-collectie doorloopt --}}
                         <tr class="border-b hover:bg-gray-50"> 
                             <td class="py-2 px-4"> 
                                 <a href="{{ route('tasks.show', $task->id) }}" class="text-blue-600 hover:underline">
